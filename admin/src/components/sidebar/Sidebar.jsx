@@ -29,24 +29,22 @@ export default function Sidebar() {
             <div className="sidebarMenu">
                 <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <Link to="/users" className='link'>
+                        <Link to="/" className='link'>
                         <li className="sidebarListItem ">
                             <PeopleAltOutlined className='sidebarIcon'/>
                             Users
                         </li>
                         </Link>
-                        <Link to="/products" className='link'>
+                        <Link to="/newUser" className='link'>
                         <li className="sidebarListItem">
                             <PlayCircleOutline className='sidebarIcon'/>
-                            Products
+                            Create New User
                         </li>
                         </Link>
-                        <Link to="/lists" className='link'>
                         <li className="sidebarListItem">
                             <ListAltOutlined className='sidebarIcon'/>
                             Lists
                         </li>
-                        </Link>
                     </ul>
             </div>
             <div className="sidebarMenu">

@@ -2,7 +2,6 @@ import { publicRequest } from "../requestMethods";
 import { getUsersFailure, getUsersStart, getUsersSuccess,deleteUserFailure, deleteUserStart, deleteUserSuccess, updateUserStart, updateUserSuccess, updateUserFailure, createUserStart, createUserSuccess, createUserFailure} from "./userRedux"
 
 
-
 //Get Users                  Working
 export const getUsers = async (dispatch) =>{
     dispatch(getUsersStart());
@@ -13,6 +12,7 @@ export const getUsers = async (dispatch) =>{
         dispatch(getUsersFailure());
     };
 };
+
 //Delete User               Working
 export const deleteUser = async (id,dispatch) =>{
     dispatch(deleteUserStart());
@@ -23,6 +23,8 @@ export const deleteUser = async (id,dispatch) =>{
         dispatch(deleteUserFailure());
     };
 };
+
+
 //Create User               
 export const createUser = async (user,dispatch) =>{
     dispatch(createUserStart());
@@ -33,6 +35,8 @@ export const createUser = async (user,dispatch) =>{
         dispatch(createUserFailure());
     };
 };
+
+
 //Update User
 export const updateUser = async (id,user,dispatch) =>{
     dispatch(updateUserStart());

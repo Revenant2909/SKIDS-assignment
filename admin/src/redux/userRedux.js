@@ -38,6 +38,7 @@ const userRedux = createSlice({
         state.isFetching=false;
         state.error = true;
        },
+
        //CREATE USER
       createUserStart:(state)=>{
         state.isFetching=true;
@@ -51,7 +52,8 @@ const userRedux = createSlice({
         state.isFetching=false;
         state.error = true;
        },
-       //CREATE USER
+       
+       //UPDATE USER
       updateUserStart:(state)=>{
         state.isFetching=true;
         state.error = false;
